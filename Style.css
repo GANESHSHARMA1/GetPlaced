@@ -1,0 +1,771 @@
+/* Applies on whole html */
+*{
+    margin: 0;
+    padding: 0;
+    
+    flex-direction: column;
+    overflow-wrap: wrap;
+    /* overflow: scroll; */
+    scroll-behavior: smooth;
+}
+hr{
+    background-color: transparent;
+    border-top: 5px dotted black;
+    list-style: none;
+}
+
+/* After Clicking to next page  */
+
+ul li a:hover{
+  color: yellow;
+  font-weight: bold;
+}
+/* ul li a:visited{
+  text-decoration: underline;
+}
+ul li a:active{
+  color: white;
+} */
+
+
+
+/* Home-page */
+
+
+.Logoplace {
+  /* background-color: rgb(254, 0, 0); */
+  background-color: red;
+  width: 100vw;
+  height: 54px;
+  font-style: italic;
+}
+header {
+    height: 104px;
+    width: 100vw;
+    display: inline;
+    top: 0%;
+    position: sticky;
+    overflow: scroll;
+  }
+  ul {
+    height: 54px;
+    padding: auto;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    text-align: center;
+    overflow: scroll;
+  }
+  ul li {
+    font-size: 3vh;
+    padding: 10px;
+    display: inline-block;
+  }
+  ul li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  .main-index {
+    margin-top: 0px;
+    border: 2px solid black;
+    width: 100vw; 
+    height: auto;
+    justify-content: center;
+    align-content: center;
+    /* padding: 10px; */
+    background-color: rgb(249, 233, 183); 
+    /* background: url("Img/Home-Background-2.GIF"); */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* margin-bottom: 0px; */
+  }
+
+  .Heading{
+    /* border: 2px solid black; */
+    /* background-color: rgb(156, 82, 82); */
+    background: url("Img/Home-Skill-Background.png");
+    background-size: cover;
+    text-align: center;
+    padding-top: 40px;
+    height: 100vw;
+    font-family:Arial, Helvetica, sans-serif ;
+    height: 40vh;
+    font-size: 3.5vh;
+  }
+
+  .Heading-para{
+    font-size: 3vh;
+    color: yellow;
+    font-weight: bold;
+  }
+
+  .box {
+    /* border: 2px solid red; */
+    /* display: inline-block; */
+    display: inline-flex;
+    width: 49vw;
+    box-sizing: border-box;
+    height: 50vh;
+    margin: 10px 0;
+    margin-left: 5px;
+    text-align: center center;
+    padding: 40px 20px;
+    background-color: blanchedalmond;
+  }
+  .login {
+      float: right;
+      position: fixed;
+      top: 1%;
+      right: 1%;
+      font-size: 3vh;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .box1{
+      background: url(Img/Choose-GetPlaced.GIF);
+      background-position: center;
+      background-size: cover;
+      width: 49vw;
+      border-radius: 15px;
+    }
+    
+
+    .box2 aside{
+      /* border-radius: 10px; */
+      text-align: center;
+      /* display: inline-block; */
+    }
+
+    #box-side{
+      text-align: center;
+      border-radius: 50px;
+      width: 49vw;
+      font-style: italic;
+    }
+    .box2{
+      background: url("Img/Home-Building.GIF");
+      background-position: center;
+      background-size: cover;
+    }
+
+    .box3{
+      /* background-color: green; */
+      background: url("Img/Home-Background-1.GIF");
+      align-items: center;
+      justify-content: center;
+      border-radius: 30px;
+    }
+
+    .box4{
+      background-image: url("Img/Home-Building2.GIF");
+      background-size: cover;
+      /* background-attachment:inherit; */
+      border-radius: 30px;
+    }
+    .box333{
+      /* border: 2px solid blue; */
+      text-align: center;
+      box-sizing:border-box;
+      width: 90%;
+      height: 90%;
+      color: black;
+      font-weight: bold;
+      font-size: larger;
+      border-radius: 30px;
+      background: url("Img/Home-Background-5.GIF");
+      /* background-color: rgb(144, 165, 242); */
+    }
+    .box333 p{
+      padding-top: 5rem;
+    }
+    .btn1{
+      position:relative;
+      top: 30%;
+      left: 45%;
+      width: 10%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    .btn{
+      padding: 8px;
+      border-radius: 10px;
+      background-color: yellow;
+    }
+    .btn a{
+      text-decoration: none;
+      font-weight: 130;
+      font-style: italic;
+      color: blue;
+    }
+
+    .Top-recruiters{
+      height: 10vh;
+      width: 100vw;
+      text-align: center;
+      padding-top: 30px;
+      /* border: 2px solid black; */
+      background-color: transparent;
+      margin-bottom: 10px;
+      margin-top: 8px;
+    }
+    .Top-recruiters h2{
+      font-style: italic;
+      font-size: 3em;
+      font-weight: bolder;
+    }
+    .requiters{
+      /* border: 2px solid blue; */
+      width: 99vw;
+      height: 30vh;
+      /* overflow: scroll; */
+      display: inline-flex;
+      flex-direction: row;
+      box-sizing: border-box;
+      animation-name: slidein;
+      animation-duration: 7s;
+      animation-direction: alternate-reverse;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+    @keyframes slidein{
+      from{
+        transform: translateX(0vh);
+      }
+      to{
+        transform: translateX(-80vh);
+      }
+    }
+    
+    .requiters img{
+      height: 28vh;
+      width: 28vw;
+      box-sizing: border-box;
+      /* background-color: rgb(255, 209, 209); */
+
+    }
+    .Img {
+        /* position: absolute; */
+        top: 0%;
+        left: 0%;
+    }
+  
+    .Why-GetPlaced{
+      width: 100vw;
+      height: 80vh;
+      background-color: antiquewhite;
+      background: url("Img/Home-Background-3.GIF");
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      margin-bottom: 10px;
+    }
+    .reason img {
+      width: 45vw;
+      height: 35vh;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+    }
+    .reason img:hover{
+      width: 50vw;
+      height: 40vh;
+    }
+    
+  
+
+    .logoname {
+        position: absolute;
+        top: 3%;
+        left: 61px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .footer {
+      height: 40px;
+      width: 100vw;
+      border: 2px px solid black;
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: static;
+      bottom: 0%;
+    }
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Services */
+    
+    .services{
+      border: 2px solid red;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(56, 191, 191);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items:center;
+    }
+    
+    .services-box img{
+      width: 40vw;
+      height: 40vh;
+      /* margin-top: 30px; */
+      align-self: center;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+    }
+
+    .services-box img:hover{
+      width: 45vw;
+      height: 45vh;
+    }
+
+    /* Questions */
+    .back{
+      border: 1px solid red;
+      background-color: antiquewhite;
+      height: 30px;
+      font-size: 23px;
+      display:flow-root;
+    }
+    .back a:hover{
+      color: blue;
+    }
+    .Add{
+      float: right;
+      border: 1px solid red;
+      background-color: antiquewhite;
+      height: 30px;
+      font-size: 23px;
+      display: flow-root;
+    }
+    .questions{
+      border: 2px solid black;
+      width: 100vw;
+      height: 102vh;
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      box-sizing: border-box;
+      justify-content: space-evenly;
+    }
+    .left{
+      width: 49vw;
+      height: 100vh;
+      border: 2px solid blue;
+      overflow: scroll;
+    }
+    .left p{
+      text-align: justify;
+    }
+    .Right{
+      width: 49vw;
+      height: 100vh;
+      border: 2px solid blue;
+      overflow: scroll;
+      overflow-y: scroll;
+    }
+    Iframe{
+      width: 70%;
+      height: 97%;
+      border: 1px solid red;
+    }
+    iframe{
+      width: 95%;
+    }
+
+
+
+
+
+    /* Placement */
+    
+    .Placement-services-box img
+    {
+      /* background-image: url("Img/Placement-1.png"); */
+      box-sizing: border-box;
+      height: 40vh;
+      width: 40vw;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+    }
+
+    .Placement-services-box img:hover{
+      width: 45vw;
+      height: 45vh;
+    }
+
+
+
+    /* About Us  */
+
+    .main-About{
+      width: 100vw;
+      height: 45vh;
+      background-color: antiquewhite;
+      border: 2px solid blue;
+      display: flex;
+      justify-content:space-evenly;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+    .main-About-us{
+      width: 90vw;
+      height: 20vh;
+      background-color: aliceblue;
+      border: 2px solid red;
+      text-align: center;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+      box-sizing: border-box;
+      overflow: scroll;
+    }
+
+    .portfolio{
+      width: 100vw;
+      height: 140vh;
+      border: 2px solid black;
+      background-color: lightgreen;
+      display: flex;
+      /* justify-content:space-around; */
+      flex-direction: row;
+      justify-content:space-evenly;
+      /* align-items: center; */
+      box-sizing: border-box;
+    }
+
+    .teamportfolio{
+      margin-top: 5%;
+      width: 30%;
+      height: 67%;
+      /* display: inline-flex; */
+      text-align: center;
+      background-color: lightcyan;
+      border: 2px solid red;
+      box-sizing: border-box;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0.9, 0.7);
+    }
+    .teamportfolio:hover{
+      width: 33%;
+    }
+
+    .portfolio-photo{
+      width: 100%;
+      /* height: 30%; */
+      display: inline-flex;
+      box-sizing: border-box;
+    }
+
+    .portfolio-about{
+      margin-top: 20px;
+      width: 100%;
+      /* height: 30px; */
+      align-items: center;
+      box-sizing: border-box;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .porfolio-follow{
+      margin-top: 20px;
+      width: 100%;
+      height: 8%;
+      background-color: antiquewhite;
+      box-sizing: border-box;
+      border: 2px solid blue;
+    }
+
+    .portfolio-contact{
+      position:static;
+      width: 100%;
+      height: 7%;
+      margin-top: 2px;
+      background-color: antiquewhite;
+      box-sizing: border-box;
+      border: 2px solid black;
+      background-color: black;
+      text-align: center;
+      color: white;
+    }
+
+    .About-Us-footer{
+      position: relative;
+      margin-top: 42%;
+    }
+
+
+
+
+    /* Contact Us  */
+
+     main{
+      width: 100vw;
+      height: 100vh;
+      background-color: aqua;
+    /* align-content: center; */
+    } 
+  /* .main-contact{
+    width: 100vw;
+    padding: 0px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: solid;
+    font-weight: 900;
+    align-items: center;
+  } */
+
+  .container{
+    width: 60%;
+    padding: 10px 300px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: solid;
+    font-weight: 900;
+  }
+  
+  #div11 {
+    height: 60px;
+      padding: 5px 5px;
+      background-color: rgb(115, 247, 63);
+      /* width: auto; */
+      color: white;
+      /* line-height: 10%; */
+      text-align: center;
+      border-radius: 5px;
+      border: 1px solid black;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+  }
+  
+  form {
+      background-color: rgb(238, 239, 235);
+      border-radius: 5px;
+      border: 1px solid black;
+      padding: 0px 80px 5px;
+      font-size: large;
+      line-height: 190%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+      width: 75%;
+      border: 1px solid black;
+      border-radius: 5px;
+      background-color: white;
+  }
+  
+  input[type="submit"] {
+      background-color: rgb(87, 189, 46);
+      font-size: larger;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      width: 70%;
+  }
+  
+  input[type="reset"] {
+      background-color: red;
+      font-size: larger;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      border: none;
+  }
+  
+  input[type="submit"]:hover {
+      background-color: rgb(0, 176, 76);
+  }
+  
+  input[type="reset"]:hover {
+      background-color: rgb(191, 0, 0);
+  }
+  
+
+  /* Login Page  */
+  
+
+
+
+
+
+
+
+/* Media quiries according to screen size */ 
+
+@media screen and (max-width: 950px)
+{
+
+  /* About Us  */
+  .teamportfolio{
+    height: 42%;
+  }
+
+  .About-Us-footer{
+    position: static;
+    margin-top: 40%;
+  }
+
+
+
+  /* services */
+ 
+  /* .services-box img{
+    width: 90vw;
+    height: 45vh;
+    /* margin-top: 30px; 
+    align-self: center;
+  } */
+
+
+    /* placement  */
+    /* .Placement-services-box img
+      {
+        /* background-image: url("Img/Placement-1.png"); 
+        box-sizing: border-box;
+        height: 45vh;
+        width: 90vw;
+      } */
+
+
+
+      /* Contact-us */
+      .container{
+        width: 80%;
+        box-sizing: border-box;
+        padding: 50px 100px;
+        padding-left: 200px;
+      }
+}
+
+ @media screen and (max-width: 700px) {
+    main {
+        background-color: greenyellow;
+      }
+      .box {
+        display: block;
+        width: 95vw;
+        background-color: navajowhite;
+      }
+      .login {
+        top: 2%;
+        right: 3%;
+        font-size: 2vh;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+      }
+      /* .box1{
+        visibility:hidden; 
+        position: absolute;
+        display: inline-block;
+      } */
+      #box-side{
+        width: 89vw;
+      }
+      .Why-GetPlaced{
+        display:inline-table;
+      }
+      .reason{
+        margin: 15px;
+        align-self: center;
+      }
+      .reason img{
+        width: 90vw;
+        /* align-self: center; */
+      }
+      .reason img:hover{
+        width: 90vw;
+        height: 40vh;
+      }
+      
+
+
+      /* About-Us  */
+      .portfolio{
+        height: 290vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+      }
+      .teamportfolio{
+        margin-left: 26px;
+        display: flex;
+        flex-direction: column;
+        height: 83vh;
+        width: 85vw;
+      }
+      .teamportfolio:hover{
+        width: 90vw;
+      }
+      #footer-About-Us {
+        margin-top: 418%;
+        width: 95vw;
+      }
+
+
+      /* Sevices  */
+      .services{
+        display:inline-table;
+        box-sizing: border-box;
+      }
+      .services-box img{
+        width: 90vw;
+        height: 45vh;
+        /* margin-top: 30px; */
+        align-self: center;
+      }
+      .services-footer{
+        margin-top: 215%;
+      }
+
+
+
+      /* Placement */
+      .services{
+        height: 200vh;
+        display: grid;
+        grid-column: span;
+        justify-content: space-around;
+      }
+      
+      .Placement-services-box img
+      {
+        /* background-image: url("Img/Placement-1.png"); */
+        box-sizing: border-box;
+        height: 45vh;
+        width: 90vw;
+      }
+
+      .Placement-footer{
+        margin-top: 215%;
+      }
+
+
+
+      /* Contact-us */
+      .container{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 10px;
+      }
+  }
+
+

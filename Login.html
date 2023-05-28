@@ -1,0 +1,183 @@
+<!-- <html>
+  <head>
+    <title>Sign Up Page</title>
+    <style>
+      /* Add some style to the page */
+      body {
+        font-family: sans-serif;
+        background-color: #f1f1f1;
+      }
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+      input[type="text"],
+      input[type="password"],
+      input[type="email"] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      .form-errors {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sign Up</h1>
+      <form id="signup-form">
+        <label for="signup-username">Username:</label><br />
+        <input type="text" id="signup-username" name="signup-username" /><br />
+        <label for="signup-email">Email:</label><br />
+        <input type="email" id="signup-email" name="signup-email" /><br />
+        <label for="signup-password">Password:</label><br />
+        <input
+          type="password"
+          id="signup-password"
+          name="signup-password"
+        /><br />
+        <label for="signup-confirm-password">Confirm Password:</label><br />
+        <input
+          type="password"
+          id="signup-confirm-password"
+          name="signup-confirm-password"
+        /><br />
+        <div class="form-errors" id="signup-errors"></div>
+        <input type="submit" value="Sign Up" />
+      </form>
+    </div>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Employee Login</title>
+
+    <!-- Font Icon -->
+    <link
+      rel="stylesheet"
+      href="fonts/material-icon/css/material-design-iconic-font.min.css"
+    />
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <input type = "hidden" id="status" value="<%= request.getAttribute("status")
+    %>">
+    <div class="main">
+      <!-- Sing in  Form -->
+      <section class="sign-in">
+        <div class="container">
+          <div class="signin-content">
+            <div class="signin-image">
+              <figure>
+                <img src="images/signin-image.jpg" alt="sing up image" />
+              </figure>
+              <a href="registration.jsp" class="signup-image-link"
+                >Create an account</a
+              >
+            </div>
+
+            <div class="signin-form">
+              <h2 class="form-title">Employee Login</h2>
+              <form
+                method="post"
+                action="Login"
+                class="register-form"
+                id="login-form"
+              >
+                <div class="form-group">
+                  <label for="username"
+                    ><i class="zmdi zmdi-account material-icons-name"></i
+                  ></label>
+                  <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Your Name"
+                    required="required"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password"><i class="zmdi zmdi-lock"></i></label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Password"
+                    required="required"
+                  />
+                </div>
+                <div class="form-group">
+                  <a href="forgotPassword1.jsp">Forgot Password?</a>
+                </div>
+                <div class="form-group form-button">
+                  <input
+                    type="submit"
+                    name="signin"
+                    id="signin"
+                    class="form-submit"
+                    value="Log in"
+                  />
+                </div>
+              </form>
+              <div class="social-login">
+                <a href="employerlogin.jsp" class="signup-image-link"
+                  >Employer Login</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="alert/dist/sweetalert.css" />
+
+    <script type="text/javascript">
+      var status = document.getElementById("status").value;
+      if (status == "failed") {
+        swal("Sorry", "Wrong Username or Password", "error");
+      } else if (status == "invalidEmail") {
+        swal("Sorry", "Please Enter Username", "error");
+      } else if (status == "invalidPassword") {
+        swal("Sorry", "Please Enter Password", "error");
+      } else if (status == "resetSuccess") {
+        swal("Congrats", "Password Changed Successfully", "success");
+      } else if (status == "resetFailed") {
+        swal("Sorry", "Password Not Changed", "error");
+      }
+    </script>
+  </body>
+  <!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
