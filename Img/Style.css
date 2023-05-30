@@ -1,0 +1,190 @@
+/* Applies on whole html */
+*{
+    margin: 0;
+    padding: 0;
+    
+    flex-direction: column;
+    overflow-wrap: wrap;
+    /* overflow: scroll; */
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 104px;
+    width: 100vw;
+    display: inline;
+    top: 0%;
+    position: sticky;
+    overflow: scroll;
+  }
+  ul {
+    height: 54px;
+    padding: auto;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    text-align: center;
+    overflow: scroll;
+  }
+  ul li {
+    font-size: 3vh;
+    padding: 10px;
+    display: inline-block;
+  }
+  ul li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  main {
+    margin-top: 0px;
+    border: 2px solid black;
+    width: 100vw;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+    /* padding: 10px; */
+    background-color: yellow;
+    margin-bottom: 0px;
+  }
+
+  .Heading{
+    border: 2px solid black;
+    background-color: rgb(176, 155, 155);
+    text-align: center;
+    padding-top: 40px;
+    height: 100vw;
+    font-family:Arial, Helvetica, sans-serif ;
+    height: 40vh;
+    font-size: 3.5vh;
+  }
+
+  .Heading-para{
+    font-size: 3vh;
+    color: blue;
+  }
+
+  .box {
+    border: 2px solid red;
+    /* display: inline-block; */
+    display: inline-flex;
+    width: 49vw;
+    box-sizing: border-box;
+    height: 50vh;
+    margin: 10px 0;
+    margin-left: 5px;
+    text-align: center center;
+    padding: 40px 20px;
+    background-color: blanchedalmond;
+  }
+  .login {
+      float: right;
+      position: fixed;
+      top: 1%;
+      right: 1%;
+      font-size: 3vh;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .box1{
+      visibility:hidden;
+      /* display: inline-block; */
+    }
+
+    .box2 aside{
+      /* border-radius: 10px; */
+      text-align: center;
+      /* display: inline-block; */
+    }
+
+    #box-side{
+      text-align: center;
+      border-radius: 50px;
+      width: 49vw;
+    }
+
+
+    .box3{
+      background-color: green;
+    }
+    .box333{
+      border: 2px solid blue;
+      text-align: center;
+      box-sizing: border-box;
+      width: 40vh;
+      height: 40vh;
+      border-radius: 30px;
+      background-color: yellow;
+    }
+
+    .btn{
+      text-align: center;
+      margin-top: 20px;
+      padding: 8px;
+      border-radius: 10px;
+    }
+    .btn a{
+      text-decoration: none;
+      background-color: paleturquoise;
+    }
+
+    .requiters{
+      border: 2px solid blue;
+      width: 99vw;
+      height: 30vh;
+    }
+    .Img {
+        /* position: absolute; */
+        top: 0%;
+        left: 0%;
+    }
+    .logoname {
+        position: absolute;
+        top: 3%;
+        left: 61px;
+        color: white;
+        text-decoration: none;
+    }
+    .Logoplace {
+        background-color: rgb(254, 0, 0);
+        width: 100vw;
+        height: 54px;
+        font-style: italic;
+    }
+    .footer {
+      height: 40px;
+      width: 100vw;
+      border: 2px px solid black;
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: static;
+      bottom: 0%;
+    }
+    
+    
+
+
+
+/* Media quiries according to screen size */
+  /* @media screen and (max-width: 800px) {
+    main {
+        background-color: greenyellow;
+      }
+      .box {
+        display: block;
+        width: 95vw;
+        background-color: navajowhite;
+      }
+      .login {
+        top: 2%;
+        right: 3%;
+        font-size: 2vh;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+      }
+  } */
